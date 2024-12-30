@@ -1,0 +1,98 @@
+
+import React from 'react';
+const LandingPage = () => {
+  return (
+    <div className="container mx-auto px-4">
+      
+      <header className="bg-gray-900 text-white py-6">
+        <div className="flex justify-between items-center">
+          <h1 className="text-3xl font-bold">AI-POWERED SOLUTIONS</h1>
+          <nav className="space-x-4">
+            <a href="#features" className="hover:underline">Features</a>
+            <a href="#about" className="hover:underline">About</a>
+            <a href="#contact" className="hover:underline">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      
+      <section className="text-center py-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <h2 className="text-4xl font-bold mb-4">AI-Enabled Customer Service</h2>
+        <p className="text-lg mb-6">
+          Deliver personalized customer support with our state-of-the-art AI solutions.
+        </p>
+        <button className="bg-white text-indigo-600 px-6 py-2 rounded-md font-semibold hover:bg-gray-200">
+          Get Started
+        </button>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="py-12">
+        <h2 className="text-3xl font-bold text-center mb-8">Our Features</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-3">24/7 Availability</h3>
+            <p>Always-on AI ensures your customers receive timely support.</p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-3">Seamless Integration</h3>
+            <p>Our solutions integrate easily with your existing platforms.</p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-3">Intelligent Responses</h3>
+            <p>AI adapts to customer queries to provide accurate answers.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-12 bg-gray-50">
+        <h2 className="text-3xl font-bold text-center mb-8">About Us</h2>
+        <p className="max-w-2xl mx-auto text-center text-lg">
+          We specialize in AI-powered customer service, helping businesses deliver unparalleled
+          customer experiences and efficiency.
+        </p>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-12">
+        <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
+        <form className="max-w-lg mx-auto space-y-6">
+          <div>
+            <label className="block text-sm font-medium" htmlFor="name">Name</label>
+            <input type="text"
+              id="name"
+              className="w-full border rounded-md px-3 py-2"
+              placeholder="Your Name" 
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium" htmlFor="email">Email</label>
+            <input type="email"
+              id="email"
+              className="w-full border rounded-md px-3 py-2"
+              placeholder="Your Email" 
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium" htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              className="w-full border rounded-md px-3 py-2"
+              rows="4"
+              placeholder="Your Message"
+          
+            ></textarea> </div>
+          <button className="bg-indigo-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-indigo-700">
+            Submit
+          </button>
+        </form>
+      </section>
+
+      {/* Footer Section */}
+      <footer className="bg-gray-900 text-white text-center py-4">
+        <p>&copy; 2024 AI-Powered Solutions. All rights reserved.</p>
+      </footer>
+    </div>
+  
+
